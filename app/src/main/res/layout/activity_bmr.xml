@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bmibg"
+    tools:context=".BMR">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:text="@string/bmr_calculator"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/Tv_3"
+                android:layout_width="70dp"
+                android:layout_height="36dp"
+                android:text="@string/age"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/et_Age"
+                android:layout_width="216dp"
+                android:layout_height="38dp"
+                android:textColor="#000000"
+                android:ems="10"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <TextView
+            android:id="@+id/Tv_5"
+            android:layout_width="75dp"
+            android:layout_height="33dp"
+            android:text="@string/height"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/et_Height"
+            android:layout_width="216dp"
+            android:layout_height="38dp"
+            android:textColor="#000000"
+            android:ems="10"
+            android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+            android:id="@+id/Tv_4"
+            android:layout_width="69dp"
+            android:layout_height="32dp"
+            android:textColor="#000000"
+            android:text="@string/weight"
+            android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/et_Weight"
+                android:layout_width="216dp"
+                android:layout_height="38dp"
+                android:textColor="#000000"
+                android:ems="10"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/Tv_1"
+                android:layout_width="69dp"
+                android:layout_height="27dp"
+                android:text="@string/gender"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+
+            <RadioGroup
+                android:id="@+id/rg_Gender"
+                android:layout_width="212dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="20dp">
+
+                <RadioButton
+                    android:id="@+id/rd_Male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/rd_Female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/female" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/Tv_6"
+                android:layout_width="69dp"
+                android:layout_height="39dp"
+                android:text="@string/activity_level"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#000000"/>
+
+
+            <RadioGroup
+                android:id="@+id/rg_Activity"
+                android:layout_width="232dp"
+                android:layout_height="161dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp">
+
+                <RadioButton
+                    android:id="@+id/rd_sedentary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_am_sedentary" />
+
+                <RadioButton
+                    android:id="@+id/rd_Lightly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lightly_active_1_3_days" />
+
+                <RadioButton
+                    android:id="@+id/rd_moderate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moderately_active_3_5_days" />
+
+                <RadioButton
+                    android:id="@+id/rd_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/very_active_6_7_days" />
+
+                <RadioButton
+                    android:id="@+id/rd_super"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/super_active_sports_job" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/bt_calc"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/calculate"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#000000"
+                android:background="@drawable/bmibg"/>
+
+            <Button
+                android:id="@+id/bt_reset"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="@string/reset_values"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#000000"
+                android:background="@drawable/bmibg"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_bmr"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_Maintenance"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:paddingLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
